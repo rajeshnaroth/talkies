@@ -1,0 +1,6 @@
+{
+  "eslint.enable": false,
+  "prettier.tslintIntegration": true,
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Monokai"
+}
