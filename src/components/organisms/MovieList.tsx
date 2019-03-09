@@ -15,4 +15,5 @@ function MovieList({ className, movieList }) {
 export default styled(MovieList)`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 `;

@@ -1,14 +1,18 @@
 import React from "react";
-import { Card, CardDetail, CardThumbNail, CardTitle, Page } from "../atoms";
+import styled from "styled-components";
+import { CardLayout } from "../molecules";
 
-export default function Movie({ poster_path, original_title, overview }) {
+function Movie({ className, poster_path, original_title, overview }) {
   return (
-    <Card>
-      <CardThumbNail>
-        <img src={poster_path} />
-      </CardThumbNail>
-      <CardTitle>{original_title}</CardTitle>
-      <CardDetail>{overview}</CardDetail>
-    </Card>
+    <div className={className}>
+      <CardLayout
+        title={original_title}
+        details={overview}
+        imageUrl={poster_path}
+      />
+    </div>
   );
 }
+export default styled(Movie)`
+  width: 20%;
+`;
