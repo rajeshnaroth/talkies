@@ -1,6 +1,6 @@
 const messages = {
   "Please wait": "Please wait.",
-  "Talkies": "** Talkies **",
+  "Talkies": "Talkies",
 };
 
 export default messages;

@@ -1,6 +1,6 @@
 export const REFRESH = "REFRESH";
-
-export default function movieReducer(list, action) {
+const defaultState = [];
+export default function movieReducer(list = defaultState, action) {
   switch (action.type) {
     case REFRESH:
       return [].concat(action.data);
