@@ -1,24 +1,13 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
-import logo from "../../../static/images/logo.svg";
+import { Link } from "react-router-dom";
 
-const logoSpin = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-`;
-
-const Rotator = styled.img`
-  animation: ${logoSpin} infinite 2s linear;
-  height: 40vmin;
-  width: 50px;
-  pointer-events: none;
-`;
-
-export default function Title() {
-  return <Rotator src={logo} alt="..." />;
+export default function Navigation() {
+  return (
+    <ul>
+      <li>
+        <Link to="/">Home</Link>
+        <Link to="/test">Test</Link>
+      </li>
+    </ul>
+  );
 }

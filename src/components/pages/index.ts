@@ -1,3 +1,4 @@
 import Main from "./Main";
+import Movies from "./Movies";
 
-export { Main };
+export { Main, Movies };

@@ -4,6 +4,7 @@ import useMovie from "../../../state/movie/useMovie";
 import { Page } from "../../atoms";
 import { Title } from "../../molecules";
 import { MovieList } from "../../organisms";
+import Navigation from "../../organisms/Navigation";
 
 // const movies = [{ name: "1" }, { name: "2" }, { name: "3" }, { name: "4" }];
 export default function Main() {

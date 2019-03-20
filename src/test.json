@@ -1,0 +1,10 @@
+{
+  "scope": { "id": "1001551300066", "type": "host" },
+  "rank": {
+    "limit": 9,
+    "orderBy": "cpuUsageMhz",
+    "aggregateRemainder": true,
+    "objectType": "vm"
+  },
+  "time": { "lookback": 604800000, "granularity": "PT1H", "gapFill": false }
+}

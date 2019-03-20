@@ -8,5 +8,10 @@ export default function useActions(dispatch) {
     dispatch({ data: movies, type: REFRESH });
   }
 
+  async function getMovie(id) {
+    const movies = await getMovies();
+    dispatch({ data: movies, type: REFRESH });
+  }
+
   return { refresh };
 }
